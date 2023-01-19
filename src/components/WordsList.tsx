@@ -45,14 +45,10 @@ const useStyles = makeStyles((theme: Theme) => ({
 interface Props {
   words: Word[];
   extractingWords: boolean;
-  onFieldMouseLeave: (word: Word) => void;
-  onFieldMouseEnter: (word: Word) => void;
   fieldRefsObject: any[];
 }
 export default function WordsList({
   words,
-  onFieldMouseEnter,
-  onFieldMouseLeave,
   extractingWords,
   fieldRefsObject,
 }: Props): JSX.Element {
@@ -99,8 +95,6 @@ export default function WordsList({
         ) : (
           words.map((word, key) => (
             <Grid
-              onMouseEnter={() => onFieldMouseEnter(word)}
-              onMouseLeave={() => onFieldMouseLeave(word)}
               className={classes.item}
               key={key}
               item
