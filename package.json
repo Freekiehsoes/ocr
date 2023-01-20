@@ -1,0 +1,33 @@
+{
+  "name": "@freekiehsoes/ocr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/Ocr.js",
+  "types": "lib/Ocr.d.ts",
+  "scripts": {
+    "build": "rm -rf ./lib && tsc && cp -r public lib",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Freekiehsoes/ocr.git"
+  },
+  "keywords": [],
+  "author": "Freek Attema",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Freekiehsoes/ocr/issues"
+  },
+  "homepage": "https://github.com/Freekiehsoes/ocr#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.9.0",
+    "@techstark/opencv-js": "^4.5.3-release.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
