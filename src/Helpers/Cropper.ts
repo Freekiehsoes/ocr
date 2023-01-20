@@ -39,7 +39,6 @@ export class Cropper {
 
         const crop = await new Promise<HTMLImageElement>((resolve) => {
             const image = document.createElement("img");
-            document.body.appendChild(image);
             image.onload = () => {
                 resolve(image);
             };

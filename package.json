@@ -1,6 +1,6 @@
 {
   "name": "@freek.attema/ocr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "lib/Ocr.js",
   "types": "lib/Ocr.d.ts",
@@ -29,6 +29,9 @@
   },
   "files": [
     "lib/**/*",
+    "public/**/*"
+  ],
+  "assets": [
     "public/**/*"
   ]
 }
