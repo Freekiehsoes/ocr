@@ -1,6 +1,6 @@
 {
   "name": "@freek.attema/ocr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/Ocr.js",
   "types": "lib/Ocr.d.ts",
@@ -28,6 +28,7 @@
     "@tensorflow/tfjs": "^3.21.0"
   },
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "public/**/*"
   ]
 }
