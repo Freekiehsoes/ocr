@@ -5,7 +5,7 @@
   "main": "lib/Ocr.js",
   "types": "lib/Ocr.d.ts",
   "scripts": {
-    "build": "rm -rf ./lib && tsc && cp -r public lib",
+    "build": " tsc && cp -r public lib",
     "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
@@ -23,9 +23,9 @@
   "devDependencies": {
     "typescript": "^4.9.4"
   },
-  "dependencies": {
-    "@tensorflow/tfjs": "^3.9.0",
-    "@techstark/opencv-js": "^4.5.3-release.3"
+  "peerDependencies": {
+    "@techstark/opencv-js": "^4.5.3-release.3",
+    "@tensorflow/tfjs": "^3.21.0"
   },
   "files": [
     "lib/**/*"
